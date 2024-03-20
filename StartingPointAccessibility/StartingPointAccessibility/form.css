@@ -1,0 +1,29 @@
+/* form.css */
+/* Distinguish required items using both color and another style */
+label[for="name"]::after,
+label[for="phone"]::after {
+    content: "*";
+    color: #000066;
+    margin-left: 4px;
+    font-weight: bold;
+}
+
+/* Format placeholders for higher contrast */
+input::placeholder {
+    font-weight: bold;
+    color: rgb(255, 255, 255);
+}
+
+/* Modify focus ring to be different than default */
+a:focus,
+button:focus,
+input:focus {
+    outline: 2px solid #000066; /* Example: blue outline */
+}
+
+/* Ensure all clickable items trigger a pointer cursor */
+a,
+button,
+input[type="checkbox"] {
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Lab 9">
+    <meta name="description" content="Web Accessibility">
+    <meta name="author" content="Vrij Sheth">
+    <link rel="stylesheet" href="form.css"/>
+    <title>Accessibility Lab - Modified Form</title>
+</head>
+<body>
+    <header>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="#">Form</a>
+        </nav>
+    </header>
+    <main>
+        <h1>Modified Accessibility Form</h1>
+        <form>
+            <fieldset>
+                <legend>Contact Information</legend>
+                <p>
+                    <label for="name">Name*:</label>
+                    <input type="text" id="name" name="name" required placeholder="Enter your name">
+                </p>
+                <p>
+                    <label for="phone">Phone*:</label>
+                    <input type="tel" id="phone" name="phone" required placeholder="Enter your phone number">
+                </p>
+            </fieldset>
+
+            <fieldset>
+                <legend>Preferences</legend>
+                <p>
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" placeholder="Enter your email address">
+                </p>
+                <p>
+                    <label><input type="checkbox" name="options" value="A"> Option 1</label><br>
+                    <label><input type="checkbox" name="options" value="B"> Option 2</label><br>
+                    <label><input type="checkbox" name="options" value="C"> Option 3</label><br>
+                    <label><input type="checkbox" name="options" value="D"> Option 4</label><br>
+                </p>
+            </fieldset>
+
+            <p>
+                <button type="submit">Submit</button>
+                <button type="reset">Reset</button>
+            </p>
+        </form>
+    </main>
+</body>
+</html>

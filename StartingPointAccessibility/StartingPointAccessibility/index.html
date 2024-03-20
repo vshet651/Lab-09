@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="keywords" content="Lab 9">
+        <meta name="description" content="Web Accessibility">
+        <meta name="author" content="Vrij Sheth">
+        <title>Accessibility Lab - HOME!</title>
+        <link rel="stylesheet" href="main.css"/>
+    </head>
+    <body>
+        <div id="skip">
+            <a href="#maincontent">Skip To Main Content</a>
+        </div>
+        <header>
+            <nav>
+                <a href="#">Home</a>
+                <a href="form.html">Form</a>
+            </nav>
+        </header>
+
+        <section id="userGuid">
+            <h1>Web Accessibility - HOME</h1>
+            <div ><a href="#">Home</a> -> <a href="#">Articles</a> -> Web Accessibility</div>
+            <nav id="internalNav">
+                <h2>Article Contents</h2>
+                <ul>
+                    <li><a href="#AboutSkipLink">Skip Navigation Link</a></li>
+                    <li><a href="#color">Color Contrast</a></li>
+                </ul>
+            </nav>
+        </section>
+
+        <main id="mainContent">
+            <section id="AboutSkipLink">
+                <h2>Skip Navigation Link</h2>
+                <p>According to <a href="webaim.org">WebAim.org</a>, the main content is not usually the first thing on a web page. Keyboard and screen reader users generally must navigate a long list of navigation links, sub-lists of links, corporate icons, site searches, and other elements before ever arriving at the main content. This is particularly difficult for users with some forms of motor disabilities.
+                    Without some sort of system for bypassing the long list of links, some users are at a huge disadvantage. Consider users with no arm movement, who use computers by tapping their heads on a switch or that use a stick in their mouth to press keyboard keys. Requiring users to perform any action perhaps 100s of times before reaching the main content is simply unacceptable.
+                    Of course, sighted people who use their mouse do not have any trouble with pages such as this. They can almost immediately scan over the page and identify where the main content is. In effect, sighted users have a built-in "skip navigation" mechanism: their eyes. They can also bypass the many links before the main content and click directly on the link they want with the mouse. The "skip navigation" idea was invented to give screen reader and keyboard users the same capability of going directly to the main content that sighted mouse users take for granted. The idea is simple enough: provide a link at the top of the page which jumps the user down to an anchor or target at the beginning of the main content. For the most part, it really is this easy! Now, it is your turn to implement Skip Navigation Link for this page. We discussed the steps in class, if you do not remember, you should spend some time to<a href="https://webaim.org/techniques/skipnav/">read about Skip Navigation Links</a> in WebAim Website.</p>
+            </section>
+            <section id="color">
+                <h2>Color Contrast</h2>
+                <p> The intent is to provide enough contrast between text and its background so that it can be read by people with moderately low vision (who do not use contrast-enhancing assistive technology). For people without color deficiencies, hue and saturation have minimal or no effect on legibility as assessed by reading performance. Color deficiencies can affect luminance contrast somewhat. Therefore, in the recommendation, the contrast is calculated in such a way that color is not a key factor so that people who have a color vision deficit will also have adequate contrast between the text and the background.
+                    Text that is decorative and conveys no information is excluded. For example, if random words are used to create a background and the words could be rearranged or substituted without changing meaning, then it would be decorative and would not need to meet this criterion.
+                </p>
+                <p>
+                    In WCAG AA, text and images of text must have a contrast ratio of at least 4.5:1. Large text (i.e., at least 18 point or 14 point and bold) can have a contrast ratio of at least 3:1.
+                </p>
+                <p><a href="https://webaim.org/resources/contrastchecker/">Here is a link for a color contrast checker</a></p>
+            </section>
+        </main>
+    </body>
+</html>
